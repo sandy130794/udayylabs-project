@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-fixed-top">
+    <a class="navbar-brand" href="#">{{userName}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <!-- <a routerLink="" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+        </li>
+        <li class="nav-item">
+          <input (keydown)="onKeydown1($event)" placeholder="Enter website link" class="nav-link textbox" type="text">
+          <!-- <a routerLink="/page1" class="nav-link" href="#">Feature 1</a> -->
+        </li>
+        <li class="nav-item">
+          
+          <!-- <a routerLink="/page2" class="nav-link" href="#">Feature 2</a> -->
+        </li>
+      </ul>
+      <input (keydown)="onKeydown2($event)" placeholder="Enter website link" class="nav-link textbox" type="text">
+      <button class="logout" type="" (click)="logout()">Logout</button>
+    </div>
+</nav>
+<div class="main_container">
+<div class="container1"><app-featureone [linkdata1]="textbox1" ></app-featureone></div>
+<div class="container2"><app-featuretwo [linkdata2]="textbox2" ></app-featuretwo></div>
+</div>
+  

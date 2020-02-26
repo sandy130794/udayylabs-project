@@ -1,0 +1,51 @@
+.logout{
+    color: white;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.navbar {
+    background-color: #08395d;
+}
+
+.nav-link{
+    border-radius: 32px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.navbar-brand {
+    color: #FFF;
+}
+
+.textbox {
+    margin: 0px 15px;
+    color: black !important;
+}
+
+.main_container{
+    height: calc(100vh - 60px);
+    overflow: hidden;
+}
+
+.container1 {
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+    border-right: 1px solid #383535;
+    padding: 8px;
+    overflow: auto;
+}
+
+.container2 {
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+    padding: 8px;
+    overflow: auto;
+}

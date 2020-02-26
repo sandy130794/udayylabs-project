@@ -1,0 +1,7 @@
+<div *ngIf="invalidUrl">
+    {{linkdata1}}
+</div>
+<div *ngIf="urlSafe">
+    <!-- {{linkdata1}} -->
+    <iframe width="100%" frameBorder="0" [src]="urlSafe"></iframe>
+</div>

@@ -1,0 +1,26 @@
+<div class="login">
+    <h2 class="login-header">User Login</h2>
+    <form [formGroup]="loginForm" class="login-container" (ngSubmit)="logindata()">
+        <p [ngClass]="{ 'has-error': isSubmitted &amp;&amp; formControls.name.errors }">
+            <input type="name" class="login-input" placeholder="Enter Name" formControlName="name">
+        </p>
+        
+        <div *ngIf="loginForm.controls.name.invalid && loginForm.controls.name.touched" class="help-block">
+            <div class="error-message" *ngIf="formControls.name.errors.required">Name is required</div>
+        </div>
+        
+        <p [ngClass]="{ 'has-error': isSubmitted &amp;&amp; formControls.password.errors }">
+            <input type="password" placeholder="Enter Password" formControlName="password">
+        </p>
+        
+        <div *ngIf="loginForm.controls.password.invalid && loginForm.controls.password.touched" class="help-block">
+            <div class="error-message" *ngIf="formControls.password.errors.required">Password is required</div>
+        </div>
+        
+        <p>
+            <input type="submit" value="Login">
+        </p>
+    
+    </form>
+    
+</div>
